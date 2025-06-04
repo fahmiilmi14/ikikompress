@@ -1,91 +1,111 @@
 * {
   box-sizing: border-box;
+  transition: all 0.3s ease;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f3f4f6;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #6366f1, #60a5fa);
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
 .container {
-  max-width: 500px;
-  margin: 40px auto;
+  max-width: 600px;
+  margin: 50px auto;
   background: white;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
   text-align: center;
 }
 
 h1 {
-  margin-bottom: 10px;
-  color: #333;
+  font-size: 2.2em;
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
-  margin-bottom: 20px;
-  color: #666;
+  color: #555;
+  margin-bottom: 25px;
 }
 
-.upload-box input[type="file"] {
+.upload-area {
+  border: 2px dashed #94a3b8;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.upload-area:hover {
+  background-color: #f9fafb;
+}
+
+.upload-area input {
   display: none;
 }
 
-.upload-box label {
-  background: #4f46e5;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
-  display: inline-block;
-  margin-bottom: 20px;
+.upload-area label {
+  font-weight: 600;
+  color: #1e3a8a;
+  font-size: 1rem;
 }
 
-.quality-box {
+.slider-group {
   margin: 20px 0;
   text-align: left;
 }
 
-.quality-box input {
+.slider-group label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
   width: 100%;
+  accent-color: #6366f1;
 }
 
 button#compressBtn {
-  background: #10b981;
+  background: linear-gradient(to right, #10b981, #22d3ee);
   color: white;
   border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
+  padding: 14px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 button#compressBtn:hover {
-  background: #059669;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
 }
 
 .preview img {
   max-width: 100%;
   margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .download-btn {
   display: inline-block;
   margin-top: 20px;
-  background: #2563eb;
+  background: #3b82f6;
   color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 12px 25px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
 }
 
 .download-btn:hover {
-  background: #1d4ed8;
+  background: #2563eb;
 }
